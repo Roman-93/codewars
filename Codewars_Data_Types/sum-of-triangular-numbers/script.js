@@ -1,7 +1,8 @@
-const findSquares = (num) => {
-  const divided = num / 2;
-  let max = Math.pow(Math.ceil(divided), 2);
-  let min = Math.pow(Math.floor(divided), 2);
-  return `${max}-${min}`;
-};
-console.log(findSquares(11));
+function sumTriangularNumbers(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += (i * (i + 1)) / 2;
+  }
+  return sum;
+}
+console.log(sumTriangularNumbers(-11));
